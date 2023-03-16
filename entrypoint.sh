@@ -1,6 +1,6 @@
 #!/bin/sh -l
 
-. /wait-for-dr-validation.sh 
+. /.pscale/cli-helper-scripts/wait-for-dr-validation.sh 
 wait_for_dr_validation 9 "$1" "$2" "$3" 60
 
 command="pscale deploy-request deploy $1 $2 --org $3 -f json"
