@@ -8,8 +8,8 @@ COPY entrypoint.sh /entrypoint.sh
 RUN chmod +x entrypoint.sh
 
 # Setup validation wait script
-COPY wait-for-validation.sh /wait-for-validation.sh
-RUN chmod +x /wait-for-validation.sh
+COPY wait-for-dr-validation.sh /wait-for-dr-validation.sh
+RUN chmod +x /wait-for-dr-validation.sh
 
 # Install the PlanetScale Actions helpers
 COPY install-helpers.sh /install-helpers.sh
