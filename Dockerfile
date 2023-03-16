@@ -7,6 +7,10 @@ RUN apk --no-cache add bash jq curl
 COPY entrypoint.sh /entrypoint.sh
 RUN chmod +x entrypoint.sh
 
+# Setup validation wait script
+COPY wait-for-validation.sh /wait-for-validation.sh
+RUN chmod +x /wait-for-validation.sh
+
 # Install the PlanetScale Actions helpers
 COPY install-helpers.sh /install-helpers.sh
 RUN chmod +x /install-helpers.sh
