@@ -1,4 +1,4 @@
-name: 'Deploy Deploy Request Action'
+name: 'Deploy a Deploy Request'
 description: 'Deploys an open deploy request for a PlanetScale database.'
 branding:
   color: 'orange'
