@@ -4,7 +4,7 @@ This GitHub Action can be used within your workflows to deploy an open deploy re
 
 ## Prerequisites
 
-Before you can use this Action, you'll need to configure a service token that has permissions to create branches on your database. Refer to our docs for more details on [how to create a service token](https://planetscale.com/docs/concepts/service-tokens). Once the service token has been created, the following repository secrets must be set:
+Before you can use this Action, you'll need to configure a service token that has permission to create branches on your database. Refer to our docs for more details on [how to create a service token](https://planetscale.com/docs/concepts/service-tokens). Once the service token has been created, the following repository secrets must be set:
 
 - `PLANETSCALE_SERVICE_TOKEN_ID`
 - `PLANETSCALE_SERVICE_TOKEN`
@@ -17,7 +17,7 @@ The following example will create a deploy request for the `recipes_db` database
 
 ```yml
 name: Deploy a deploy request
-on: 
+on:
   pull_request:
     types: [closed]
 
@@ -28,7 +28,7 @@ jobs:
       - name: checkout
         uses: actions/checkout@v3
       - name: Deploy a deploy request
-        uses: planetscale/create-deploy-request-action@v1
+        uses: planetscale/deploy-deploy-request-action@v1
         with:
           org_name: bmorrison-ps
           database_name: recipes_db
