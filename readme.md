@@ -28,7 +28,7 @@ jobs:
       - name: checkout
         uses: actions/checkout@v3
       - name: Deploy a deploy request
-        uses: planetscale/deploy-deploy-request-action@v2
+        uses: planetscale/deploy-deploy-request-action@v3
         with:
           org_name: bmorrison-ps
           database_name: recipes_db
