@@ -32,7 +32,7 @@ jobs:
         with:
           org_name: bmorrison-ps
           database_name: recipes_db
-          branch_name: dev
+          number: 123
         env:
           PLANETSCALE_SERVICE_TOKEN_ID: ${{ secrets.PLANETSCALE_SERVICE_TOKEN_ID }}
           PLANETSCALE_SERVICE_TOKEN: ${{ secrets.PLANETSCALE_SERVICE_TOKEN }}
