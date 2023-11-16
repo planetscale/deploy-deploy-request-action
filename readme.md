@@ -28,7 +28,7 @@ jobs:
       - name: checkout
         uses: actions/checkout@v3
       - name: Deploy a deploy request
-        uses: planetscale/deploy-deploy-request-action@v3
+        uses: planetscale/deploy-deploy-request-action@v4
         with:
           org_name: bmorrison-ps
           database_name: recipes_db
@@ -44,8 +44,8 @@ jobs:
 
 - `org_name` - The name of the PlanetScale organization.
 - `database_name` - The name of the database to create the branch on.
-- `number` - The number of the deploy request.
 
 **Optional**
 
+- `number` - The number of the deploy request to deploy. Defaults to the latest deploy request. 
 - `wait` - If set to `true`, this action will wait for the deploy request to merge before exiting.

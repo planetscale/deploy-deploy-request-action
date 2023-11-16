@@ -8,8 +8,8 @@ inputs:
     description: 'The name of the database.'
     required: true
   number:
-    description: 'The number of the deploy request to deploy.'
-    required: true
+    description: 'The number of the deploy request to deploy. Defaults to the latest deploy request.'
+    required: false
   org_name:
     description: 'The name of the organization that owns the database.'
     required: true
