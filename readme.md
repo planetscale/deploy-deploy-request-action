@@ -1,4 +1,10 @@
-# Deploy Deploy Request Action
+**:warning: :warning:**
+
+**This Action has been replaced by [`setup-pscale-action`](https://github.com/planetscale/setup-pscale-action). Which is even faster! [Please see an example here](https://planetscale.com/docs/devops/github-actions#submit-a-deploy-request-by-branch-name).**
+
+**:warning: :warning:**
+
+## Deploy Deploy Request Action
 
 This GitHub Action can be used within your workflows to deploy an open deploy request for your PlanetScale database.
 
